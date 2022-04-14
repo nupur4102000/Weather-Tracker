@@ -10,15 +10,7 @@ body {
     font-size: 120%;
   }
   
-  .hd{
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      justify-content: center;
-    align-items: center;
-    margin-left:55px;
-    color:#05968f;
-    font-weight: 1000;
-  }
-  .box {
+  .card {
     background: #000000d0;
     color: white;
     padding: 2em;
@@ -58,10 +50,6 @@ body {
     font-size: 105%;
     width: calc(100% - 100px);
   }
-  .city
-  {
-    color:#e86060fa;
-  }
   
   button:hover {
     background: #7c7c7c6b;
@@ -76,28 +64,22 @@ body {
     display: flex;
     align-items: center;
   }
-  .humidity
-  {
-    color: #7cf7f7;
-  }
-  .wind
-  {
-    color: #7cf7f7;
-  }
+  
   .description {
     text-transform: capitalize;
     margin-left: 8px;
   }
   
-  .weather.desc{
+  .weather.loading {
     visibility: hidden;
     max-height: 20px;
     position: relative;
   }
   
-  .weather.desc:after {
+  .weather.loading:after {
     visibility: visible;
-    color: rgb(64, 88, 138);
+    content: "Loading...";
+    color: white;
     position: absolute;
     top: 0;
     left: 20px;
